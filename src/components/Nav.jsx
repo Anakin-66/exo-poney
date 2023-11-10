@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Nav() {
     return (
-        <ul>
+        <ul className="puce">
             <li>
                 <Link to="/poney">Nos Poneys</Link>
             </li>

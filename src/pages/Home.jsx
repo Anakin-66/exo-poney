@@ -85,8 +85,7 @@ function Home() {
       
 
     return (
-        // <div className="backgroundContainer" style={{ backgroundImage: "url(images/poney2.jpg)" }}>
-        <>
+        <div className="backgroundContainer" style={{ backgroundImage: "url(images/poney3.jpg)" }}>
             <Header />
             <Nav />
                 <main>
@@ -95,15 +94,14 @@ function Home() {
                         return (
                             <article>
                                 <h2> {poney.name} </h2>
-                                <p> {poney.color} </p>
-                                <p> {poney.age} </p>
+                                <p> couleur : {poney.color} </p>
+                                <p> âge : {poney.age} </p>
                             </article>
                         )
                     })}
                 </main>
             <Footer />
-        </>
-        // </div>
+        </div>
     )
 }
 

@@ -1,0 +1,55 @@
+body {
+    color: rgb(255, 0, 38);
+}
+
+.backgroundContainer {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.puce {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 0, 38);
+    background-color: pink;
+    opacity: 0.5;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+article {
+    background-color: pink;
+    text-align: center;
+    opacity: 0.5;
+
+}
+h2 {
+    text-align: center;
+    padding: 2rem;
+}
+h1 {
+    text-align: center;
+    padding: 2rem;
+}
+footer {
+    text-align: center;
+}
+.aboutus {
+    text-align: center;
+    margin: 2rem;
+}
+.formContainer {
+    max-width: 20%;
+    margin: auto;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    
+}

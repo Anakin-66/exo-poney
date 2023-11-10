@@ -1,3 +1,6 @@
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+
 function Poney() {
     const poneys = [
         {
@@ -73,17 +76,21 @@ function Poney() {
       ];
     
         return (
-            <>
-                {poneys.map((allPoneys) => {
-                    return (
-                        <article>
-                                <h2> {allPoneys.name} </h2>
-                                <p> {allPoneys.color} </p>
-                                <p> {allPoneys.age} </p>
-                        </article>
-                    )
-                })}
-            </>
+            
+            <div className="backgroundContainer" style={{ backgroundImage: "url(images/poney3.jpg)" }}>
+                <Header />
+                    {poneys.map((allPoneys) => {
+                        return (
+                            <article>
+                                    <h2> {allPoneys.name} </h2>
+                                    <p>couleur : {allPoneys.color} </p>
+                                    <p>âge : {allPoneys.age} </p>
+                            </article>
+                        )
+                    })}
+                <Footer />
+            </div>
+            
         )
 }
 

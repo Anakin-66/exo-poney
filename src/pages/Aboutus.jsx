@@ -1,3 +1,6 @@
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+
 function About() {
     const infos = {
         author: "Poney Man",
@@ -6,11 +9,15 @@ function About() {
       };
 
     return (
-        <>
-            <p> {infos.author} </p>
-            <p> {infos.published} </p>
-            <p> {infos.address} </p>
-        </>
+        <div className="backgroundContainer" style={{ backgroundImage: "url(images/poney3.jpg)" }}>
+            <Header />
+                <div className="aboutus">
+                    <p> {infos.author} </p>
+                    <p> {infos.published} </p>
+                    <p> {infos.address} </p>
+                </div>
+            <Footer/>
+        </div>
     )
 }
 
