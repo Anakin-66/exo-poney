@@ -5,6 +5,7 @@ import Header from "../components/Header";
 function Contact() {
 
     const onClick = (event) => {
+        event.preventDefault();
         console.log(`Le champ ${event} a été cliqué !`);
       };
 
@@ -27,7 +28,7 @@ function Contact() {
                             
                         </textarea>
                         </label>
-                        <input onClick={() => onClick()} type="submit" value="Envoyer" />
+                        <input onClick={onClick} type="submit" value="Envoyer" />
                     </form>
                 </div>
             <Footer />
