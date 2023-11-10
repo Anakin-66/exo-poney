@@ -1,7 +1,13 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
+
 function Contact() {
+
+    const onClick = (event) => {
+        console.log(`Le champ ${event} a été cliqué !`);
+      };
+
     return (
         <div className="backgroundContainer" style={{ backgroundImage: "url(images/poney3.jpg)" }}>
             <Header />
@@ -21,7 +27,7 @@ function Contact() {
                             
                         </textarea>
                         </label>
-                        <input type="submit" value="Envoyer" />
+                        <input onClick={() => onClick()} type="submit" value="Envoyer" />
                     </form>
                 </div>
             <Footer />
